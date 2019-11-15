@@ -1,5 +1,33 @@
 let FirstComponent = () => {
-    return <span>Make this component render like the Windows Logo: <a href="https://goo.gl/images/mY5Qdv" target="_blank">https://goo.gl/images/mY5Qdv</a></span>
+    return <div className="red"></div>
+}
+let SecondComponent = () => {
+    return <div className="green"></div>
+}
+let ThirdComponent = () => {
+    return <div className="blue"></div>
+}
+let FourthComponent = () => {
+    return <div className="yellow"></div>
 }
 
-ReactDOM.render(<FirstComponent />, document.getElementById('root'))
+let WindowsImage1 = () => {
+    return <div className="window">
+        <FirstComponent /> <SecondComponent />
+    
+    </div>
+}
+
+let WindowsImage2 = () => {
+    return <div className="window">
+       <ThirdComponent /><FourthComponent />
+    </div>
+}
+let WindowsImage3 = () => {
+    return <div>
+       <WindowsImage1 />
+       <WindowsImage2 />
+    </div>
+}
+
+ReactDOM.render(<WindowsImage3 />, document.getElementById('root'))
