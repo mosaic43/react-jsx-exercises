@@ -1,9 +1,7 @@
 .green {
     background-color: green;
 }
-.container {
-    background: blue;
-}
+
 .background {
     background-color: green;
     display: flex;
